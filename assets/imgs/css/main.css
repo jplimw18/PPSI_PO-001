@@ -1,5 +1,57 @@
+/* SUMÁRIO DE PROPRIEDADES *:
+    1) Box-sizing -> ele dita como o tamanho do conteúdo deve ser calculado:
+            com o "valor" border-box ele calcula o tamanho somando altura, comprimento, borda e o padding;
+
+            com o "valor" content-box ele calcula o tamanho a partir da altura e largura. Padding e borda são adicionados depois desse calculo;
+        FONTE -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizing
+        PAPEL -> Estou usando a propriedade pra evitar que a caixa do h1 que estou usando passe do tamanho fixo que quero mante-la
+
+    2) Display -> Determina como o elemento vai ser enxergado (bloco ou linha) e qual   vai ser o "perfil" de formatação dos filhos dele (os elementos que estiverem dentro da tag):
+        com o "valor" flex o elemento passa a ser entendido como um bloco (uma caixa) e os filhos passam a seguir as regras do FLEXBOX **
+
+            ** FLEXBOX: conjunto de regras que ditam como o conteúdo deve ser "apresentado" em linha ou em coluna, basicamente onde e como eles devem preencher os espaços da caixa principal
+
+        2.1) justify-content -> determina onde e como os elementos devem ficar na direção determinada (no caso a oranização ta acontecendo baseada em uma linha, mas poderia ser em colunas). Por padrão o display: flex já diz que a direção/orientação é em linha, para ter controle se vai ser em linhas ou em colunas deve-se usar flex-direction**
+
+            ** flex-direction: te permite dizer se os elementos vão ser organizados em linhas ou colunas (por padrão é usado linha - valor: row)
+
+        2.2) align-items -> determina o posicionamento do conteudo da caixa de acordo com a "direção oposta" determinada pelo flex-direction, se o valor for "row" ou em linha ele vai ditar o comportamento de acordo com a coluna e vice-versa
+    FONTE -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_display
+    PAPEL -> usei esse conjunto de regras pra centralizar o conteudo do meu h1 com objetivos estéticos
+    
+
+*/
+
+/* OBSERVAÇÕES *:
+    1) declarei margin e padding como 0 na body para ter mais controle dos espaços na minha página (questão de preferência);
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,400;1,600;1,700&family=Tiny5&display=swap');
 
-h1 {
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+    margin: 0; /* OBS - 1* */
+    padding: 0; /*OBS - 1* */
+}
+
+h1 {
+    width: 100%;
+    height: 100px;
+
+    display: flex;  /* PROP - 2* */
+    justify-content: center; /* PROP - 2.1* */
+    align-items: center; /* PROP - 2.2* */
+
+    font-family: "Tiny5";
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+
+    background: #111111;
+
+    padding: 10px;
+    box-sizing: border-box; /* PROP - 1* */
+
+    margin-top: 0;
 }
