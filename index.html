@@ -11,18 +11,26 @@
     <h1>Projeto Orientado</h1>
 
     <!-- "navBar" **p > a + |** -->
-    <p> Home | <a href="aluno1.html">João Lima</a> | <a href="aluno2.html">Quetin Tarantino</a> | <a href="tabela-curiosidade.html">Tabela de Curiosidades</a> | <a href="site-favorito.html">Sites Favoritos</a></p>
+    <p class="nav-bar"> <a id="curr-page">Home</a> <a href="aluno1.html" class="nav-link">João Lima</a>  <a href="aluno2.html" class="nav-link">Quetin Tarantino</a>  <a href="tabela-curiosidade.html" class="nav-link">Tabela de Curiosidades</a>  <a href="site-favorito.html" class="nav-link">Sites Favoritos</a></p>
 
     <!-- Região alunos-->
-    <h2>Aluno(s) do projeto</h2>
-    <p>Clique sobre a imagem para saber mais sobre o estudante desejado</p>
+    <section class="reg-alunos">
+        <h2>Aluno(s) do projeto</h2>
+        <p>Clique sobre a imagem para saber mais sobre o estudante desejado</p>
 
-    <!-- Nome e foto Aluno 1 -->
-    <h3>João Lima</h3>
-    <a href="aluno1.html"><img src="assets/imgs/fotoJoaoLima.webp" alt="Foto do aluno João Lima" height="420" width="310"></a>
-
-    <!-- Nome e foto Aluno 2 -->
-    <h3>Quetin Tarantino</h3>
-    <a href="aluno2.html"><img src="assets/imgs/fotoTarantino.webp" alt="Foto do aluno Quetin Tarantino" height="420" width="310"></a>
+        <div>
+            <!-- Nome e foto Aluno 1 -->
+            <article class="item-aluno">
+                <h3>João Lima</h3>
+                <a href="aluno1.html"><img src="assets/imgs/fotoJoaoLima.webp" alt="Foto do aluno João Lima" height="420" width="310"></a>
+            </article>
+    
+            <!-- Nome e foto Aluno 2 -->
+            <article class="item-aluno">
+                <h3>Quetin Tarantino</h3>
+                <a href="aluno2.html"><img src="assets/imgs/fotoTarantino.webp" alt="Foto do aluno Quetin Tarantino" height="420" width="310"></a>
+            </article>
+        </div>
+    </section>
 </body>
 </html>
