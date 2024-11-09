@@ -3,12 +3,12 @@
 @import url(../css/main.css); /* arquivo de configurações globais */
 
 body {
-    background-color: #555555;
+    background-color: #111111;
 }
 
 .reg-alunos {
     width: 100%;
-    height: calc(100vh - 100px); /* OBS - 2* & 2.1* */
+    height: calc(100vh - 150px); /* OBS - 2* & 2.1* */
 
     /* background: rebeccapurple; */
 
@@ -103,17 +103,17 @@ body {
 
 .item-aluno img {
     border: 5px solid #555555;
-    filter: saturate(0);
+    /* filter: saturate(0); */
 
     transition: 0.3s linear; /* PROP - 6* */
 }
 
 #item-aluno-1 img:hover {
     border: 5px solid #f0003c;
-    filter: saturate(); /* PROP - 7* */
+    /* filter: saturate(); PROP - 7* */
 }
 
 #item-aluno-2 img:hover {
     border: 5px solid #046cff;
-    filter: saturate(); /* PROP - 7* */
+    /* filter: saturate(); PROP - 7* */
 }
