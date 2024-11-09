@@ -2,15 +2,72 @@
 
 @import url(../css/main.css); /* arquivo de configurações globais */
 
-#aluno-1 {
-    background: #046cff;
-}
-
-#aluno-2 {
-    background: #f0003c;
+body{
+    background: #111111;
 }
 
 h2 {
     font-family: "Tiny5";
+    font-size: 46px;
+}
+
+#nome-aluno-1 {
+    color: #046cff;
+}
+
+#nome-aluno-2 {
+    color: #f0003c;
+}
+
+.reg-info-aluno {
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex; /* PROP - 2* */
+    align-items: center; /* PROP - 2.2* */
+}
+
+.foto-aluno {
+    width: 40%;
+    height: 100%;
+
+    display: flex; /* PROP - 2* */
+    flex-direction: column; /* PROP - 2** */
+    justify-content: center; /*PROP - 2.1* */
+    align-items: center; /* PROP - 2.2* */
+}
+
+.aluno-descricao {
+    width: 60%;
+    height: 100%;
+
+    display: flex; /* PROP - 2* */
+    flex-direction: column; /* PROP - 2** */
+    justify-content: center; /* PROP - 2.1* */
+    align-items: flex-start;  /* PROP - 2.2* */
+
+    padding: 10px;
+    box-sizing: border-box; /* PROP - 1* */
+}
+
+.reg-info-aluno p {
+    width: 85%;
+
+    display: flex; /* PROP - 2* */
+    justify-content: center; /* PROP - 2.1* */
+    align-items: center;  /* PROP - 2.2* */
+    
+    text-align: left;
     font-size: 36px;
+    color: #fff;
+
+    padding: 10px;
+    box-sizing: border-box; /* PROP - 1* */
+}
+
+#aluno-1 .foto-aluno img {
+    border: 5px solid #046cff;
+}
+
+#aluno-2 .foto-aluno img {
+    border: 5px solid #f0003c;
 }
