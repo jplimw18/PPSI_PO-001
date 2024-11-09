@@ -1,0 +1,16 @@
+/* DESCRIÇÃO DE PROPRIEDADES E OBSERVAÇÕES ESTÃO NO 'main.css' */
+
+@import url(../css/main.css); /* arquivo de configurações globais */
+
+#aluno-1 {
+    background: #046cff;
+}
+
+#aluno-2 {
+    background: #f0003c;
+}
+
+h2 {
+    font-family: "Tiny5";
+    font-size: 36px;
+}
