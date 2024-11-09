@@ -24,6 +24,32 @@
         com o "valor" none: impede que o ponteiro do mouse entenda o elemento como uma possível interação
     FONTE -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/pointer-events
     PAPEL -> usei para impedir a navegação de uma página para ela mesma. Exemplo: seu o usuário se encontra na home, não faz sentido um botão pra ele ir a home.
+
+    4) border-image -> colocar ao invés de apenas cores na borda, usar uma imagem ou um gradiente - como foi o caso - para preencher as bordas
+        4 **) linear-gradient() --> OBS - 3**
+
+        4.1) border-image-slice -> permite dividir ou partir os 4 cantos de uma borda, o número que você coloca é o número de divisões que cada canto da borda vai ter
+    FONTE(s) -> https://developer.mozilla.org/en-US/docs/Web/CSS/border-image;
+             -> https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice
+    PAPEL -> usei porquê queria fazer um efeito de contorno que ocupasse cada metade de uma caixa com cores diferentes
+    
+    5) z-index -> permite dizer para o elemento em qual camada ele deve estar (camadas maiores bota ele a frente, camadas menores atrás)
+
+        5.1) position -> deixa eu "dizer" para o navegador como o elemento deve ser renderizado
+            com "valor" relative: optei pelo relative por manter o fluxo de renderização normal e me dá a possibilidade de controlar o z-index do elemento. Honestamente fiquei entre usar sticky ou fixed também, mas vendo um pouco mais afundo achei mais adequado o uso do relative
+
+    FONTE -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/position
+    PAPEL -> usei porquê o efeito de sombra e da minha pseudoclasse 'hover' estavam sendo sobrepostos por uma caixa abaixo
+
+    6) transition -> deixa eu manipular literalmente a transição de um elemento, seja para uma animação ou a "ativação" de uma pseudoclasse (quanto tempo de transição, delay, tipo -> "linear, ease-in, ease-out, etc..")
+
+    FONTE -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/transition
+    PAPEL -> queria uma transição legal pra dar um efeito de "selecione seu personagem" na index.html
+    
+    7) filter -> manipulação de cores principalmente, valores de saturação, brilho, escala de cinza 
+
+    PAPEL -> queria reduzir a saturação das imagens para dar a ideia de que "nenhum personagem foi selecionado"
+
 */
 
 /* OBSERVAÇÕES:
@@ -32,6 +58,8 @@
     2) função calc() permite atribuir valores que são resultados de algum calculo, no caso usei para fazer com que a minha região alunos ocupasse o espaço restante da tela
 
         2.1) vh -> unidade de medida baseada na resolução/tamanho da tela, usei pelo fato de que resolução de tela ser algo variável
+
+    3) função linear-gradient() gera uma imagem a partir de um transição de cores que você pode escolher a direção/padrão do gradiente, as cores e quanto espaço cada uma deve ocupar. Usei para fazer o efeito do contorno que possue duas cores.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,400;1,600;1,700&family=Tiny5&display=swap');
@@ -72,7 +100,7 @@ h1 {
     width: 100%;
     height: 50px;
 
-    position: fixed; /* PROP - 6.1* */
+    position: relative; /* PROP - 5.1* */
     z-index: 1; /* PROP - 5* */
 
     display: flex; /* PROP - 2* */
@@ -148,7 +176,6 @@ h1 {
     position: absolute; /* PROP 6* */
     top: 150px;
 
-
     background: #111111;
     color: #fff;
 
@@ -193,7 +220,7 @@ h1 {
     align-items: center; /* PROP - 2.2* */
     
     margin: auto;
-    box-sizing: border-box;
+    box-sizing: border-box; /* PROP - 1*  */
 
     transition: 0.3s linear; /* PROP - 6*/
 }
@@ -225,5 +252,18 @@ h1 {
 
 .item-aluno img {
     border: 5px solid #555555;
+    filter: saturate(0);
+
+    transition: 0.3s linear; /* PROP - 6* */
+}
+
+#item-aluno-1 img:hover {
+    border: 5px solid #f0003c;
+    filter: saturate(); /* PROP - 7* */
+}
+
+#item-aluno-2 img:hover {
+    border: 5px solid #046cff;
+    filter: saturate(); /* PROP - 7* */
 }
 
