@@ -2,10 +2,6 @@
 
 @import url(../css/main.css); /* arquivo de configurações globais */
 
-body {
-    background-color: #111111;
-}
-
 .reg-alunos {
     width: 100%;
     height: calc(100vh - 150px); /* OBS - 2* & 2.1* */

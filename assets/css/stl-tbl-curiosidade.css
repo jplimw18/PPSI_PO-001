@@ -1,0 +1,31 @@
+/* DESCRIÇÃO DE PROPRIEDADES E OBSERVAÇÕES ESTÃO NO 'main.css' */
+
+@import url(../css/main.css); /* arquivo de configurações globais */
+
+.reg-tbl {
+    width: 100%;
+    height: calc(100vh - 150px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Tiny5";
+    font-size: 46px;
+    color: #fff;
+}
+
+table {
+    color: #fff;
+}
+
+tr {
+    
+}
+th {
+    font-family: "Tiny5";
+    font-size: 26px;
+}

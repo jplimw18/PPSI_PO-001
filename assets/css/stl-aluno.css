@@ -2,10 +2,6 @@
 
 @import url(../css/main.css); /* arquivo de configurações globais */
 
-body{
-    background: #111111;
-}
-
 h2 {
     font-family: "Tiny5";
     font-size: 46px;
