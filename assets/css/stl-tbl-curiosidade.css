@@ -2,30 +2,54 @@
 
 @import url(../css/main.css); /* arquivo de configurações globais */
 
-.reg-tbl {
-    width: 100%;
-    height: calc(100vh - 150px);
+table {
+    width: 75%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute; /* PROP 5* & 5.2* */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%); /* PROP - 9* */
+
+    font-size: 26px;
+    color: #fff;
+
+    border-collapse: collapse;
 }
 
-h2 {
+caption {
     font-family: "Tiny5";
     font-size: 46px;
+    font-weight: bold;
     color: #fff;
+
+    margin-bottom: 20px;
 }
 
-table {
-    color: #fff;
+table thead tr{ pointer-events: none; /* PROP - 3* */ }
+
+td, th {
+    min-width: 150px;
+
+    border: 2px dashed #fff;    
+
+    padding: 10px;
+    box-sizing: border-box; /* PROP - 1* */
 }
 
-tr {
-    
-}
 th {
     font-family: "Tiny5";
-    font-size: 26px;
+    font-size: 36px;
+    border: 2px solid #fff;
 }
+
+.th-aluno-1 { color: #046cff;}
+.th-aluno-2 { color: #f0003c; }
+
+tr:hover {
+    background: #fff;
+    color: #000;
+}
+
+.td-aluno-1:hover { outline: 5px dashed #046cff; }
+
+.td-aluno-2:hover { outline: 5px dashed #f0003c; /* PROP - 8* */ }
