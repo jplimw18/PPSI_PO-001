@@ -7,13 +7,9 @@ h2 {
     font-size: 46px;
 }
 
-#nome-aluno-1 {
-    color: #046cff;
-}
+#nome-aluno-1 { color: #046cff; }
 
-#nome-aluno-2 {
-    color: #f0003c;
-}
+#nome-aluno-2 { color: #f0003c; }
 
 .reg-info-aluno {
     width: 100%;
@@ -60,10 +56,6 @@ h2 {
     box-sizing: border-box; /* PROP - 1* */
 }
 
-#aluno-1 .foto-aluno img {
-    border: 5px solid #046cff;
-}
+#aluno-1 .foto-aluno img { border: 5px solid #046cff; }
 
-#aluno-2 .foto-aluno img {
-    border: 5px solid #f0003c;
-}
+#aluno-2 .foto-aluno img { border: 5px solid #f0003c; }
