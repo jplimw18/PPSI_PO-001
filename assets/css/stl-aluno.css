@@ -1,6 +1,6 @@
 /* DESCRIÇÃO DE PROPRIEDADES E OBSERVAÇÕES ESTÃO NO 'main.css' */
 
-@import url(../css/main.css); /* arquivo de configurações globais */
+@import url(main.css); /* arquivo de configurações globais */
 
 h2 {
     font-family: "Tiny5";
