@@ -1,10 +1,12 @@
 /* DESCRIÇÃO DE PROPRIEDADES E OBSERVAÇÕES ESTÃO NO 'main.css' */
 
-@import url(../css/main.css); /* arquivo de configurações globais */
+@import url(main.css); /* arquivo de configurações globais */
 
 .reg-alunos {
     width: 100%;
     height: calc(100vh - 150px); /* OBS - 2* & 2.1* */
+
+    position: relative;
 
     /* background: rebeccapurple; */
 
@@ -21,7 +23,9 @@
     height: 100px;
 
     position: absolute; /* PROP 6* */
-    top: 150px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     background: #111111;
     color: #fff;
