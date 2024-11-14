@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Sistemas para Internet</title>
+    <link rel="stylesheet" href="assets/css/stl-contato.css">
+</head>
+<body>
+    <!-- Título -->
+    <h1>Projeto Orientado</h1>
+
+    <!-- "navBar" **p > a + |** -->
+    <p class="nav-bar"> <a id="curr-page">Home</a> <a href="aluno1.html" class="nav-link">João Lima</a>  <a href="aluno2.html" class="nav-link">Quetin Tarantino</a>  <a href="tabela-curiosidade.html" class="nav-link">Tabela de Curiosidades</a>  <a href="site-favorito.html" class="nav-link">Sites Favoritos</a></p>
+
+    <!-- Região formulário -->
+    <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+        <fieldset>
+            <legend>Informações Pessoais & Detinatários</legend>
+            <p class="frmt-col">
+                <label for="txt-name">Nome:</label>
+                <input type="text" name="txt-name" id="txt-name">
+            </p>
+
+            <p class="frmt-col">
+                <label for="txt-email">Email:</label>
+                <input type="text" name="txt-email" id="txt-email">
+            </p>
+
+            <p>
+                <input type="checkbox" name="dest[]" id="chk-destinatario-aln-1" value="aln-1">
+                <label for="chk-destinatario-aln-1">João Lima</label>
+                <input type="checkbox" name="dest[]" id="chk-destinatario-aln-2" value="aln-2">
+                <label for="chk-destinatario-aln-2">Quetin tarantino</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Content</legend>
+            <p class="frmt-col">
+                <label for="txt-msg">Mensagem:</label>
+                <textarea name="txt-msg" id="txt-msg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
