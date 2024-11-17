@@ -53,6 +53,16 @@
 
     PAPEL -> queria reduzir a saturação das imagens para dar a ideia de que "nenhum personagem foi selecionado"
 
+    8) outline -> contorno que não altera o tamanho do elemento
+
+    FONTE -> https://developer.mozilla.org/en-US/docs/Web/CSS/outline
+    PAPEL -> usei para alguns 'hovers' e não queria que o tamanho do elemento ficasse oscilando, visualmente não estava agradável
+
+    9) transform -> define algumas características de renderização do elemento como a posição, o tamanho (scale), rotação, etc.
+    
+    FONTE -> https://developer.mozilla.org/en-US/docs/Web/CSS/transform 
+    PAPEL -> usei em conjunto com position para centralizar alguns elemtnos independentes e também para alterar a escala de um botão ao pressiona-lo
+
 */
 
 /* OBSERVAÇÕES:
@@ -63,6 +73,10 @@
         2.1) vh -> unidade de medida baseada na resolução/tamanho da tela, usei pelo fato de que resolução de tela ser algo variável
 
     3) função linear-gradient() gera uma imagem a partir de um transição de cores que você pode escolher a direção/padrão do gradiente, as cores e quanto espaço cada uma deve ocupar. Usei para fazer o efeito do contorno que possue duas cores.
+
+    4) pseudoclasse 'focus' dita as regras do elemento para quando ele estiver selecionado (em foco), usei para personalizar alguns itens do meu formulário
+
+    5) pseudoelemento 'placeholder' permite manipular as regras que se aplicam ao placeholder de um controlador, usei para mudar a fonte
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,400;1,600;1,700&family=Tiny5&display=swap');

@@ -3,23 +3,82 @@
 @import url(main.css); /* arquivo de configurações globais */
 
 h2 {
-    font-size: 36px;
+    font-size: 46px;
     font-family: "Tiny5";
     color: #fff;
 
     text-align: center;
 
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 26px;
+    font-family: "Tiny5";
+    color: #000;
+    text-align: center;
+
+    background: #fff;
+
+    border: 2px solid #fff;
+
+    padding: 10px;
+    box-sizing: border-box; /* PROP - 1* */
 }
 
 .reg-lists {
     width: 80%;
 
-    display: flex;
+    position: absolute; /* PROP 5* & 5.2* */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* PROP - 9* */
+
+    display: flex; /* PROP - 2* */
+    justify-content: center; /* PROP - 2.1* */
+    align-items: center; /* PROP - 2.2* */
+
+    margin: auto;
 }
 
-.list-sites {
-    width: 400px;
-
-    background: #fff;
+ul {
+    border: 2px solid #fff;
 }
+
+li {
+    border-bottom: 1px dashed #fff;
+
+    padding: 10px;
+    box-sizing: border-box; /* PROP - 1* */
+
+    list-style: none;
+}
+
+#list-aln-1 ul li:hover {
+    background: #dadada1e;
+    outline: 4px dashed #046cff; /* PROP - 8* */ 
+}
+
+#list-aln-2 ul li:hover {
+    background: #dadada1e;
+    outline: 4px dashed #f0003c; /* PROP - 8* */ 
+}
+
+/* li:hover {
+    border-left: 5px solid #f0003c;
+    border-top: 5px solid #f0003c;
+
+    border-right: 5px solid #046cff;
+    border-bottom: 5px solid #046cff;
+} */
+
+ul li a {
+    font-size: 26px;
+    color: #fff;
+}
+
+ul li a:visited {
+    color: #fff;
+}
+

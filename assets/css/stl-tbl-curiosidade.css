@@ -50,6 +50,6 @@ tr:hover {
     color: #000;
 }
 
-.td-aluno-1:hover { outline: 5px dashed #046cff; }
+.td-aluno-1:hover { outline: 5px dashed #046cff; /* PROP - 8* */ }
 
 .td-aluno-2:hover { outline: 5px dashed #f0003c; /* PROP - 8* */ }

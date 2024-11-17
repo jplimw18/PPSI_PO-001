@@ -25,7 +25,7 @@
     position: absolute; /* PROP 6* */
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* PROP - 9* */
 
     background: #111111;
     color: #fff;
@@ -85,17 +85,8 @@
 
 #item-aluno-1 { border-right: 5px solid #046cff; }
 
-#item-aluno-1:hover {
-    width: 60%;
-    background: #046cff;
-}
-
 #item-aluno-2 { border-left: 5px solid #f0003c; }
 
-#item-aluno-2:hover {
-    width: 60%;
-    background: #f0003c;
-}
 
 .item-aluno img {
     border: 5px solid #555555;
