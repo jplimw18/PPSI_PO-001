@@ -15,6 +15,7 @@ h2 {
     width: 100%;
     height: calc(100vh - 150px);
     display: flex; /* PROP - 2* */
+    justify-content: space-around;
     align-items: center; /* PROP - 2.2* */
 }
 
@@ -56,6 +57,6 @@ h2 {
     box-sizing: border-box; /* PROP - 1* */
 }
 
-#aluno-1 .foto-aluno img { border: 5px solid #046cff; }
+#img-aln-1 { border: 5px solid #046cff;}
 
-#aluno-2 .foto-aluno img { border: 5px solid #f0003c; }
+#img-aln-2 { border: 5px solid #f0003c; }

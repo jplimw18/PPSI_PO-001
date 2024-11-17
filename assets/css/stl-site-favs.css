@@ -1,0 +1,25 @@
+/* DESCRIÇÃO DE PROPRIEDADES E OBSERVAÇÕES ESTÃO NO 'main.css' */
+
+@import url(main.css); /* arquivo de configurações globais */
+
+h2 {
+    font-size: 36px;
+    font-family: "Tiny5";
+    color: #fff;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.reg-lists {
+    width: 80%;
+
+    display: flex;
+}
+
+.list-sites {
+    width: 400px;
+
+    background: #fff;
+}
